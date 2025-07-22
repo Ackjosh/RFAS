@@ -1,5 +1,3 @@
-Of course. Here is the README for the RFAS project, formatted correctly with Markdown syntax.
-
 # Realtime Fuel Availability System (RFAS)
 
 A full-stack application providing a live platform for fuel stations to report their fuel levels and for drivers to locate available fuel nearby.
@@ -159,6 +157,6 @@ Contributions are welcome to enhance the functionality and design of RFAS. Hereâ
 
 For questions or more information about this project, feel free to reach out:
 
-  * **Email**: `akshatdjoshi@gmail.com`
-  * **GitHub**: `Ackjosh`
-  * **LinkedIn**: `Akshat Joshi`
+  * **Email**: akshatdjoshi@gmail.com
+  * **GitHub**: [Ackjosh](https://github.com/Ackjosh)
+  * **LinkedIn**: [Akshat Joshi](https://www.linkedin.com/in/akshat-joshi-17ab542b9/)
