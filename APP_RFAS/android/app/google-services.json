@@ -1,0 +1,28 @@
+{
+  "project_info": {
+    "project_number": "183616831570",
+    "project_id": "pbl-cng",
+    "storage_bucket": "pbl-cng.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183616831570:android:a432a0f55ccaf5810c5f8b",
+        "android_client_info": {
+          "package_name": "com.example.pbl_sample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
