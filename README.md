@@ -1,69 +1,111 @@
-# Welcome to your Lovable project
+RFAS - Realtime Fuel Availability System
+RFAS is a full-stack application designed to bridge the information gap between fuel stations and drivers. It provides a real-time platform where station owners can update their current fuel availability, and consumers can view this information on an interactive map, ensuring they can find fuel efficiently when they need it most.
 
-## Project info
+Features
+This project is divided into two main components: the web portal for station owners and the mobile application for drivers.
 
-**URL**: https://lovable.dev/projects/37dc0d92-e8bc-403c-ade1-49676d7dc07b
+For Drivers (Mobile App)
+Interactive Map View: Utilizes OpenStreetMap (OSM) to display a live map of all registered fuel stations.
 
-## How can I edit this code?
+Real-time Fuel Status: See up-to-the-minute fuel levels at each station, indicated by intuitive icons or colors.
 
-There are several ways of editing your application.
+Find Nearby Stations: Automatically detects the user's location to show the closest available fuel options.
 
-**Use Lovable**
+Favorites List: Allows users to save their frequently visited stations for quick access.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/37dc0d92-e8bc-403c-ade1-49676d7dc07b) and start prompting.
+For Station Owners (Web Portal)
+Secure Authentication: Station owners can sign up and log in securely using Firebase Authentication.
 
-Changes made via Lovable will be committed automatically to this repo.
+Location Registration: Captures the precise geographic coordinates of the station during the sign-up process.
 
-**Use your preferred IDE**
+Fuel Level Dashboard: A simple and secure interface for owners to update their current fuel stock in real-time.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+System Architecture
+The system consists of a React-based web portal where station owners authenticate via Firebase and write fuel/location data to a Cloud Firestore database. A Flutter mobile app reads this data in real-time from Firestore and uses the OpenStreetMap API to display the stations and their status on an interactive map for drivers. This architecture ensures low latency and high availability of data.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Technology Stack
+Mobile Application: Flutter
 
-Follow these steps:
+Web Portal: React.js
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Backend & Database: Firebase (Authentication, Cloud Firestore)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Mapping: OpenStreetMap (OSM)
 
-# Step 3: Install the necessary dependencies.
-npm i
+Installation
+To get this project running locally, you'll need to set up the web portal and the mobile app separately.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Prerequisites:
 
-**Edit a file directly in GitHub**
+Node.js and npm installed
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Flutter SDK installed
 
-**Use GitHub Codespaces**
+A Firebase project with Authentication and Firestore enabled.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Instructions:
 
-## What technologies are used for this project?
+Clone the repository:
 
-This project is built with .
+Bash
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+git clone https://github.com/your-username/rfas-project.git
+cd rfas-project
+Set up Firebase:
 
-## How can I deploy this project?
+Create a firebaseConfig.js file in the web portal's src directory with your Firebase project credentials.
 
-Simply open [Lovable](https://lovable.dev/projects/37dc0d92-e8bc-403c-ade1-49676d7dc07b) and click on Share -> Publish.
+Place your google-services.json (for Android) and GoogleService-Info.plist (for iOS) in the appropriate directories within the Flutter project.
 
-## I want to use a custom domain - is that possible?
+Web Portal (React)
+Navigate to the web directory:
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Bash
+
+cd web-portal
+Install dependencies:
+
+Bash
+
+npm install
+Start the development server:
+
+Bash
+
+npm start
+The portal will be running at http://localhost:3000.
+
+Mobile App (Flutter)
+Navigate to the mobile directory:
+
+Bash
+
+cd mobile-app
+Install dependencies:
+
+Bash
+
+flutter pub get
+Run the app:
+
+Bash
+
+flutter run
+Usage
+As a Station Owner:
+Open the web portal.
+
+Register your fuel station with an email, password, and your station's location.
+
+Log in to your dashboard.
+
+Update the status of your fuel tanks as they change.
+
+As a Driver:
+Download and open the mobile app.
+
+Grant location permissions to see nearby stations.
+
+Browse the map to see stations around you and their current fuel levels.
+
+Tap on a station to view more details or add it to your favorites.
