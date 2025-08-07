@@ -157,6 +157,6 @@ Contributions are welcome to enhance the functionality and design of RFAS. Hereâ
 
 For questions or more information about this project, feel free to reach out:
 
-- Email: your.email@example.com
+- Email: akshatdjoshi@gmail.com
 - GitHub: [Ackjosh](https://github.com/Ackjosh)
 - LinkedIn: [Akshat Joshi](https://www.linkedin.com/in/akshat-joshi-17ab542b9/)
