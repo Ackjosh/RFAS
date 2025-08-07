@@ -1,162 +1,69 @@
-# Realtime Fuel Availability System (RFAS)
+# Welcome to your Lovable project
 
-A full-stack application providing a live platform for fuel stations to report their fuel levels and for drivers to locate available fuel nearby.
+## Project info
 
------
+**URL**: https://lovable.dev/projects/37dc0d92-e8bc-403c-ade1-49676d7dc07b
 
-## Table of Contents
+## How can I edit this code?
 
-1.  [Introduction](https://www.google.com/search?q=%23introduction)
-2.  [Features](https://www.google.com/search?q=%23features)
-3.  [Technology Stack](https://www.google.com/search?q=%23technology-stack)
-4.  [Installation](https://www.google.com/search?q=%23installation)
-5.  [Usage](https://www.google.com/search?q=%23usage)
-6.  [Advantages](https://www.google.com/search?q=%23advantages)
-7.  [Limitations](https://www.google.com/search?q=%23limitations)
-8.  [Contributing](https://www.google.com/search?q=%23contributing)
-9.  [Contact](https://www.google.com/search?q=%23contact)
+There are several ways of editing your application.
 
------
+**Use Lovable**
 
-## Introduction
+Simply visit the [Lovable Project](https://lovable.dev/projects/37dc0d92-e8bc-403c-ade1-49676d7dc07b) and start prompting.
 
-This project aims to solve the common problem of fuel uncertainty for drivers. RFAS provides a reliable, real-time system where fuel stations can broadcast their current stock levels. Drivers can then use a mobile application to see this information on a live map, allowing them to find available fuel without the guesswork, saving time and reducing anxiety.
+Changes made via Lovable will be committed automatically to this repo.
 
------
+**Use your preferred IDE**
 
-## Features
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-#### Driver Features (Mobile App)
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-  * **Live Map of Stations**: Displays nearby fuel stations on an interactive map using OpenStreetMap (OSM).
-  * **Real-Time Fuel Status**: View up-to-the-minute fuel availability for each station.
-  * **Favorites**: Save frequently visited stations for quick access to their status.
-  * **GPS-Based Search**: Automatically finds the closest stations relative to the user's current location.
+Follow these steps:
 
-#### Station Owner Features (Web Portal)
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-  * **Secure User Authentication**: A dedicated portal with sign-up and log-in functionality for station owners, powered by Firebase.
-  * **Location Registration**: Captures and stores the station's precise geographic coordinates during setup.
-  * **Simple Dashboard**: An easy-to-use interface for owners to quickly update their fuel levels.
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
------
+# Step 3: Install the necessary dependencies.
+npm i
 
-## Technology Stack
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
-  * **Frontend (Web Portal)**: `React.js`
-  * **Frontend (Mobile App)**: `Flutter`
-  * **Backend & Database**: `Firebase (Cloud Firestore)`
-  * **Authentication**: `Firebase Authentication`
-  * **Mapping API**: `OpenStreetMap (OSM)`
+**Edit a file directly in GitHub**
 
------
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-## Installation
+**Use GitHub Codespaces**
 
-Follow these steps to set up the project locally. Note that the web portal and mobile app must be set up separately.
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-1.  Clone the repository:
-    ```sh
-    git clone https://github.com/your-username/rfas-project.git
-    ```
-2.  Navigate to the project directory:
-    ```sh
-    cd rfas-project
-    ```
+## What technologies are used for this project?
 
-**For the Web Portal (React):**
+This project is built with .
 
-3.  Navigate to the web directory:
-    ```sh
-    cd web-portal
-    ```
-4.  Install dependencies:
-    ```sh
-    npm install
-    ```
-5.  Start the development server:
-    ```sh
-    npm start
-    ```
-6.  Open the app in your browser at `http://localhost:3000`
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-**For the Mobile App (Flutter):**
+## How can I deploy this project?
 
-3.  Navigate to the mobile directory:
-    ```sh
-    cd mobile-app
-    ```
-4.  Install dependencies:
-    ```sh
-    flutter pub get
-    ```
-5.  Run the app on an emulator or connected device:
-    ```sh
-    flutter run
-    ```
+Simply open [Lovable](https://lovable.dev/projects/37dc0d92-e8bc-403c-ade1-49676d7dc07b) and click on Share -> Publish.
 
------
+## I want to use a custom domain - is that possible?
 
-## Usage
-
-#### For Station Owners:
-
-1.  Navigate to the web portal URL.
-2.  Sign up with your station's details, including its location.
-3.  Log in to the dashboard.
-4.  Update your fuel levels whenever there is a change.
-
-#### For Drivers:
-
-1.  Open the mobile application.
-2.  Allow location permissions to find nearby stations.
-3.  Explore the map to see fuel stations and their live availability.
-4.  Tap a station for more details or add it to your favorites.
-
------
-
-## Advantages
-
-  * **Real-Time Data**: Provides instant, up-to-date information, eliminating uncertainty for drivers.
-  * **Centralized System**: A single, reliable source of truth for fuel availability in a given area.
-  * **Scalable Backend**: Built on Firebase, allowing the system to scale efficiently with more users and stations.
-  * **Intuitive UI**: Designed for ease of use for both non-technical station staff and everyday drivers.
-
------
-
-## Limitations
-
-  * **Data Reliant on Humans**: The system's accuracy depends on station owners updating their status in a timely manner.
-  * **No Advanced Filtering**: Lacks features to filter by fuel type (e.g., `Diesel`, `Premium`) or specific station amenities.
-  * **No Transactional Features**: The app does not support payments or pre-booking of fuel.
-
------
-
-## Contributing
-
-Contributions are welcome to enhance the functionality and design of RFAS. Here’s how you can help:
-
-1.  Fork the repository.
-2.  Create a new branch:
-    ```sh
-    git checkout -b feature-name
-    ```
-3.  Make your changes and commit them:
-    ```sh
-    git commit -m "Add feature description"
-    ```
-4.  Push your changes:
-    ```sh
-    git push origin feature-name
-    ```
-5.  Open a pull request with a detailed description of your changes.
-
------
-
-## Contact
-
-For questions or more information about this project, feel free to reach out:
-
-  * **Email**: akshatdjoshi@gmail.com
-  * **GitHub**: [Ackjosh](https://github.com/Ackjosh)
-  * **LinkedIn**: [Akshat Joshi](https://www.linkedin.com/in/akshat-joshi-17ab542b9/)
+We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
