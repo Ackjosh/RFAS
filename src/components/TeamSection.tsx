@@ -42,15 +42,22 @@ const TeamSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
-          {[1, 2, 3, 4, 5].map((index) => (
+        <div className="flex gap-8 justify-center items-center">
             <TeamMember 
-              key={index}
-              name={`PERSON ${index}`}
+              name="Akshat Joshi"
               role="Team Member"
-              delayIndex={index - 1}
+              delayIndex={0}
             />
-          ))}
+            <TeamMember 
+              name="Jayraj Desai"
+              role="Team Member"
+              delayIndex={0}
+            />
+            <TeamMember 
+              name="Diya Baldota"
+              role="Team Member"
+              delayIndex={0}
+            />
         </div>
       </div>
     </section>
